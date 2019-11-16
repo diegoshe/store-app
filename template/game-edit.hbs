@@ -1,0 +1,33 @@
+<h1>Edit {{game.title}}</h1>
+
+<form action="/games/edit" method="POST" class="game-form">
+
+    <div class="input-field">
+        <input id="title" name="title" type="text" class="validate" required value="{{game.title}}">
+        <label for="title">Name Game</label>
+        <span class="helper-text" data-error="enter name" ></span>
+    </div>
+
+    <div class="input-field">
+        <input id="price" name="price" type="number" class="validate" required min="1" value="{{game.price}}">
+        <label for="price">Price Game</label>
+        <span class="helper-text" data-error="enter price" ></span>
+    </div>
+
+    <div class="input-field">
+        <input id="img" name="img" type="text" class="validate" required value="{{game.img}}">
+        <label for="img">URL Img</label>
+        <span class="helper-text" data-error="enter url img" ></span>
+    </div>
+
+    <input type="hidden" name="id" value="{{game.id}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+
+<form action="/games/remove" method="POST">
+    <input type="hidden" name="id" value="{{game.id}}">
+    <input type="hidden" name="_csrf" value="{{csrf}}">
+    <button type="submit" class="btn red">Delete</button>
+</form>

@@ -1,0 +1,63 @@
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="/" class="brand-logo" >Store Games</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    {{#if isHome}}
+                        <li class="active"><a href="/">Home</a></li>
+                    {{else}}
+                        <li><a href="/">Home</a></li>
+                    {{/if}}
+
+                    {{#if isGames}}
+                        <li class="active"><a href="/games">Games</a></li>
+                    {{else}}
+                        <li><a href="/games">Games</a></li>
+                    {{/if}}
+
+                    {{#if isAuth}}
+                        {{#if isAdd}}
+                            <li class="active"><a href="/add">Add game</a></li>
+                        {{else}}
+                            <li><a href="/add">Add game</a></li>
+                        {{/if}}
+
+                        {{#if isAdd}}
+                            <li class="active"><a href="/profile">Profile</a></li>
+                        {{else}}
+                            <li><a href="/profile">Profile</a></li>
+                        {{/if}}
+
+                        {{#if isCard}}
+                            <li class="active"><a href="/card">Cart</a></li>
+                        {{else}}
+                            <li><a href="/card">Cart</a></li>
+                        {{/if}}
+
+                        {{#if isOrder}}
+                            <li class="active"><a href="/orders">Orders</a></li>
+                        {{else}}
+                            <li><a href="/orders">Orders</a></li>
+                        {{/if}}
+                            <li><a href="/auth/logout">Sign out</a></li>
+                    {{else}}
+                        {{#if isLogin}}
+                            <li class="active"><a href="/auth/login#login">Sign in</a></li>
+                        {{else}}
+                            <li><a href="/auth/login#login">Sign in</a></li>
+                        {{/if}}
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+
+
+
+

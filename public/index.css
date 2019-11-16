@@ -1,0 +1,93 @@
+.nav-wrapper {
+    padding: 0 2rem;
+    background-color: rgb(183, 0, 255);
+}
+.btn {
+    background-color: rgb(183, 0, 255);
+}
+.price {
+    font-size: 1.5rem;
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error404{
+    color: black;
+}
+
+.game h1 {
+    margin-bottom: 2rem;
+}
+
+.game img {
+    max-width: 600px;
+    height: auto;
+}
+
+.game .price.big {
+    font-size: 2.5rem;
+}
+
+.card-action.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game-form {
+    margin-bottom: 2rem;
+}
+
+.auth {
+    padding-top: 1rem;
+}
+
+.alert {
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: #fcadaa;
+    color: #ffffff;
+}
+
+.tabs .tab a.active {
+    color: #2bbbad;
+}
+
+.tabs .tab a {
+    color: #b700ff;
+    font-weight: 600;
+}
+.tabs .tab a:hover {
+    color: #2bbbad;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #c540fa1e;
+}
+
+.tabs .indicator {
+    background-color: #b700ff;
+}
+
+h1 {
+    color: #b700ff;
+}
+h4 {
+    color: #b700ff;
+}
+
+strong {
+    color: #2bbbad;
+}
+
+.avatar {
+    max-width: 300px;
+    height: auto;
+}
